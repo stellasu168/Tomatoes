@@ -17,3 +17,6 @@ All the requirement items, such as ...
 - User can pull to refresh the movie list.
 
 App Demo
+I'm having trouble with LICEcap.app. I can't open it. It's returning this error
+
+“LICEcap.app” can’t be opened because it is from an unidentified developer.
