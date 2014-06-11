@@ -9,7 +9,6 @@
 
 #import "AppDelegate.h"
 #import "MoviesViewController.h"
-//#import "TestViewController.h"
 
 @implementation AppDelegate
 
@@ -25,20 +24,6 @@
                                    initWithRootViewController:vc];
     
     self.window.rootViewController =nvc;
-    
-//    // original
-//    UINavigationController *nvc = [[UINavigationController alloc]
-//        initWithRootViewController:[[MoviesViewController alloc] init]];
-    
-//    UITabBarController *tabBarController = [[UITabBarController alloc] init];
-//   
-//    TestViewController *tvc = [[TestViewController alloc] init];
-//    tvc.tabBarItem = [[UITabBarItem alloc]
-//        initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:0];
-//    
-//    [tabBarController setViewControllers:@[nvc,tvc]];
-//    
-//    self.window.rootViewController = tabBarController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

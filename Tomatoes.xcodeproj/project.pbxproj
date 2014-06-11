@@ -23,11 +23,9 @@
 		4289804E1909B82F0026099A /* MoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4289804C1909B82F0026099A /* MoviesViewController.xib */; };
 		428980541909B92A0026099A /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 428980521909B92A0026099A /* MovieCell.m */; };
 		428980551909B92A0026099A /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 428980531909B92A0026099A /* MovieCell.xib */; };
-		55C40AEE191336A600AA48BC /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C40AEC191336A600AA48BC /* TestViewController.m */; };
-		55C40AEF191336A600AA48BC /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C40AED191336A600AA48BC /* TestViewController.xib */; };
 		55C693BD190A06F700E4509E /* MovieDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C693BB190A06F700E4509E /* MovieDetailsViewController.m */; };
 		55C693BE190A06F700E4509E /* MovieDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C693BC190A06F700E4509E /* MovieDetailsViewController.xib */; };
-		D06EBC99353B45EDAEA1B72D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAC636D70074E90BCA43E72 /* libPods.a */; };
+		A773C233BD114B7197B88181 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAC636D70074E90BCA43E72 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,9 +63,8 @@
 		428980511909B92A0026099A /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
 		428980521909B92A0026099A /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 		428980531909B92A0026099A /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
-		55C40AEB191336A600AA48BC /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		55C40AEC191336A600AA48BC /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		55C40AED191336A600AA48BC /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		556582781947F1F5004B820B /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
+		556582791947F1F5004B820B /* libPods-MBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MBProgressHUD.a"; path = "Pods/build/Debug-iphoneos/libPods-MBProgressHUD.a"; sourceTree = "<group>"; };
 		55C693BA190A06F700E4509E /* MovieDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailsViewController.h; sourceTree = "<group>"; };
 		55C693BB190A06F700E4509E /* MovieDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailsViewController.m; sourceTree = "<group>"; };
 		55C693BC190A06F700E4509E /* MovieDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieDetailsViewController.xib; sourceTree = "<group>"; };
@@ -81,7 +78,7 @@
 				4289801E1909B75A0026099A /* CoreGraphics.framework in Frameworks */,
 				428980201909B75A0026099A /* UIKit.framework in Frameworks */,
 				4289801C1909B75A0026099A /* Foundation.framework in Frameworks */,
-				D06EBC99353B45EDAEA1B72D /* libPods.a in Frameworks */,
+				A773C233BD114B7197B88181 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +118,8 @@
 		4289801A1909B75A0026099A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				556582781947F1F5004B820B /* libPods-AFNetworking.a */,
+				556582791947F1F5004B820B /* libPods-MBProgressHUD.a */,
 				4289801B1909B75A0026099A /* Foundation.framework */,
 				4289801D1909B75A0026099A /* CoreGraphics.framework */,
 				4289801F1909B75A0026099A /* UIKit.framework */,
@@ -183,9 +182,6 @@
 				55C693BA190A06F700E4509E /* MovieDetailsViewController.h */,
 				55C693BB190A06F700E4509E /* MovieDetailsViewController.m */,
 				55C693BC190A06F700E4509E /* MovieDetailsViewController.xib */,
-				55C40AEB191336A600AA48BC /* TestViewController.h */,
-				55C40AEC191336A600AA48BC /* TestViewController.m */,
-				55C40AED191336A600AA48BC /* TestViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -271,7 +267,6 @@
 				4289804E1909B82F0026099A /* MoviesViewController.xib in Resources */,
 				428980551909B92A0026099A /* MovieCell.xib in Resources */,
 				4289802E1909B75A0026099A /* Images.xcassets in Resources */,
-				55C40AEF191336A600AA48BC /* TestViewController.xib in Resources */,
 				55C693BE190A06F700E4509E /* MovieDetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,7 +319,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55C40AEE191336A600AA48BC /* TestViewController.m in Sources */,
 				55C693BD190A06F700E4509E /* MovieDetailsViewController.m in Sources */,
 				4289804D1909B82F0026099A /* MoviesViewController.m in Sources */,
 				4289802C1909B75A0026099A /* AppDelegate.m in Sources */,
@@ -450,6 +444,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tomatoes/Tomatoes-Prefix.pch";
 				INFOPLIST_FILE = "Tomatoes/Tomatoes-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -464,6 +462,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tomatoes/Tomatoes-Prefix.pch";
 				INFOPLIST_FILE = "Tomatoes/Tomatoes-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

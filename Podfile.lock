@@ -21,7 +21,7 @@ PODS:
   - MBProgressHUD (0.8)
 
 DEPENDENCIES:
-  - AFNetworking
+  - AFNetworking (~> 2.2)
   - MBProgressHUD (~> 0.8)
 
 SPEC CHECKSUMS:

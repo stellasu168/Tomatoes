@@ -7,6 +7,12 @@
 //  This should call MovieMasterViewController.
 
 #import <UIKit/UIKit.h>
+#import "AFNetworking.h"
+#import "MovieCell.h"
+#import "UIImageView+AFNetworking.h"
+#import "MovieDetailsViewController.h"
+#import "MBProgressHUD.h"
+
 
 @interface MoviesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 

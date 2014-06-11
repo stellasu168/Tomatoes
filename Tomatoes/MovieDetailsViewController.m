@@ -36,39 +36,25 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    // [self.movieScroll addSubview:self.movieSynopsisLabel];
-    self.movieScroll.contentSize = CGSizeMake(0, 680);
-    //
-    [self.movieScroll setContentOffset:CGPointMake(self.movieScroll.contentOffset.y, 0) animated:YES];
-    
-    //[self.movieScroll addSubview:self.movieDetailView];
-    
     NSURL *posterURL = [NSURL
                         URLWithString: [self.movie
                                         valueForKeyPath:@"posters.original"]];
     
     [self.moviePoster setImageWithURL:posterURL];
+    
     self.title = self.movie[@"title"];
     self.movieSynopsisLabel.text = self.movie[@"synopsis"];
     self.movieTitleLabel.text = self.movie[@"title"];
-  
-}
+    
+    [self.movieSynopsisLabel sizeToFit];
+    CGRect newBackgroundViewFrame = self.movieDetailView.frame;
 
-// Set up your properties here
-//- (void)viewDidLoad
-//{
-//    [super viewDidLoad];
-//
-//    // Do any additional setup after loading the view from its nib.
-//
-//    NSURL *posterURL = [NSURL
-//                        URLWithString: [self.movie
-//                        valueForKeyPath:@"posters.original"]];
-//
-//    [self.moviePoster setImageWithURL:posterURL];
-//    self.movieSynopsisLabel.text = self.movie[@"synopsis"];
-//                                          
-//}
+    newBackgroundViewFrame.size.height = self.movieSynopsisLabel.frame.origin.y + self.movieSynopsisLabel.frame.size.height + 200;
+    self.movieDetailView.frame = newBackgroundViewFrame;
+
+    [self.movieScroll setContentSize:CGSizeMake(self.movieScroll.frame.size.width, self.movieDetailView.frame.origin.y + self.movieDetailView.frame.size.height - 180)];
+    
+}
 
 - (void)didReceiveMemoryWarning
 {
